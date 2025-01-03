@@ -1,0 +1,230 @@
+:root {
+  /* Theme Color */
+  --text-gray: #3f4954;
+  --bg-color2: #f0eefa;
+  --bg-color1: #f0eefa93;
+  --button1: #ff5d6bb7;
+  --button2: #ff5d6a;
+  --header_footer: #1d3557;
+
+  /* FontFamily */
+  --Roboto: "Roboto", cursive;
+}
+
+.login.container-1,
+.register.container-1,
+.error .container-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 3rem;
+}
+.error.container-1 {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-image: url(../images/3819740.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.error .container-2 {
+  position: absolute;
+  padding: 10px;
+  top: 25%;
+  left: 35%;
+  background: var(--bg-color1);
+}
+
+.login {
+  background-color: white;
+}
+
+.login-card {
+  width: 400px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.register {
+  background-color: white;
+}
+
+.register-card {
+  width: 400px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.login-card * {
+  padding: 3px;
+  margin: 5px;
+}
+.login-card h5 {
+  text-align: left;
+}
+
+.register-card * {
+  padding: 3px;
+  margin: 5px;
+}
+.register-card h5 {
+  text-align: left;
+}
+
+.login-card i:hover,
+.register-card i:hover {
+  color: black;
+}
+
+.error img {
+  width: 80%;
+}
+
+/* product page */
+.product a {
+  color: var(--header_footer);
+}
+.product * a:hover {
+  color: blue !important;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 2rem;
+}
+
+.product .container-1 .container-a {
+  background-color: var(--bg-color2);
+}
+
+.product .container-2 img {
+  height: 320px;
+  object-fit: cover;
+}
+
+.about .container-1 {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/ab1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 80%;
+}
+
+.about .container-1 h1 {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  background-color: var(--bg-color1);
+}
+
+.about .grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+}
+
+.about .container-2 {
+  background-color: white;
+}
+
+.about .container-3.a .img-container {
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/ab2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 80%;
+}
+.about .container-3.b .img-container {
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/ab3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 80%;
+}
+
+.about .text-box {
+  background-color: var(--bg-color2);
+}
+
+.about .container-4 .img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* faq */
+.faq .icons i {
+  font-size: 3rem;
+  color: var(--button1);
+}
+
+.faq .faq-detail .q-card {
+  background-color: white;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.faq i:hover {
+  color: var(--button2);
+}
+.faq h5:hover {
+  color: unset;
+}
+
+a.btn:hover {
+  color: white !important;
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .error .container-2 {
+    top: 20%;
+    left: 20%;
+  }
+
+  .error.container-1 {
+    background-position: 50% 45%;
+  }
+
+  .product {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about .container-1 h1 {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    background-color: var(--bg-color1);
+  }
+}
+@media (max-width: 500px) {
+  .login-card {
+    width: 300px;
+  }
+  .register-card {
+    width: 300px;
+  }
+
+  .error .container-2 {
+    top: 20%;
+    left: 10%;
+  }
+
+  .faq .faq-detail .container-1 {
+    margin: 0rem !important;
+  }
+}
