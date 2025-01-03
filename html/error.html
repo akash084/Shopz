@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap css files -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Bootstrap css files -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 
-    <!-- Owl carousel -->
-    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+		<!-- Owl carousel -->
+		<link rel="stylesheet" href="../css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="../css/owl.theme.default.min.css" />
 
-    <!-- Custom css files -->
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/style-2.css" />
-    <title>Akash Cloth Ecommerce Website</title>
-  </head>
-  <body>
-    <div class="loading-body">
-      <div class="loading">
-        <div class="percent">100%</div>
-        <div class="text">Completed</div>
-        <div class="progress-bar">
-          <div class="progress"></div>
-        </div>
-      </div>
-    </div>
-    <!-- Main section -->
-    <main>
-      <section class="error container-1">
-        <div class="container-2">
-          <h3>Error</h3>
+		<!-- Custom css files -->
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/style-2.css" />
+		<title>Akash Cloth Ecommerce Website</title>
+	</head>
+	<body>
+		<div class="loading-body">
+			<div class="loading">
+				<div class="percent">100%</div>
+				<div class="text">Completed</div>
+				<div class="progress-bar">
+					<div class="progress"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Main section -->
+		<main>
+			<section class="error container-1">
+				<div class="container-2">
+					<h3>Error</h3>
 
-          <p>The page you are looking for is missing</p>
-          <a href="home.html" class="btn">Go back to home page</a>
-        </div>
-      </section>
-    </main>
-    <!-- Jquery js file -->
-    <script src="../js/jquery.3.6.0.js"></script>
+					<p>The page you are looking for is missing</p>
+					<a href="index.html" class="btn">Go back to home page</a>
+				</div>
+			</section>
+		</main>
+		<!-- Jquery js file -->
+		<script src="../js/jquery.3.6.0.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        // Loading animation
-        var percent = document.querySelector(".percent");
-        var progress = document.querySelector(".progress");
-        var text = document.querySelector(".text");
-        var count = 4;
-        var per = 16;
-        var loading = setInterval(animate, 10);
-        function animate() {
-          if (count == 100 && per == 400) {
-            percent.classList.add("text-blink");
-            text.style.display = "block";
-            clearInterval(loading);
-          } else {
-            per = per + 4;
-            count = count + 1;
-            progress.style.width = per + "px";
-            percent.textContent = count + "%";
-          }
-        }
+		<script>
+			$(document).ready(function () {
+				// Loading animation
+				var percent = document.querySelector(".percent");
+				var progress = document.querySelector(".progress");
+				var text = document.querySelector(".text");
+				var count = 4;
+				var per = 16;
+				var loading = setInterval(animate, 10);
+				function animate() {
+					if (count == 100 && per == 400) {
+						percent.classList.add("text-blink");
+						text.style.display = "block";
+						clearInterval(loading);
+					} else {
+						per = per + 4;
+						count = count + 1;
+						progress.style.width = per + "px";
+						percent.textContent = count + "%";
+					}
+				}
 
-        setTimeout(function () {
-          $(".loading-body").addClass("loaded");
-        }, 2000);
-      });
-    </script>
-  </body>
+				setTimeout(function () {
+					$(".loading-body").addClass("loaded");
+				}, 2000);
+			});
+		</script>
+	</body>
 </html>
